@@ -8,152 +8,200 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f5f8fc;
-      color: #142033;
+      background: #eef3f8;
+      color: #1f2937;
       line-height: 1.6;
     }
 
-    .wrap {
-      max-width: 1100px;
+    .container {
+      max-width: 1180px;
       margin: auto;
-      padding: 28px 18px;
+      padding: 24px;
     }
 
     .hero {
-      display: grid;
-      grid-template-columns: 190px 1fr;
-      gap: 28px;
-      align-items: center;
-      background: linear-gradient(135deg, #10243b, #0f4c81);
+      background: linear-gradient(135deg, #0b1f33, #12395b);
       color: white;
       border-radius: 8px;
-      padding: 34px;
-      margin-bottom: 18px;
+      padding: 44px;
+      display: grid;
+      grid-template-columns: 210px 1fr;
+      gap: 34px;
+      align-items: center;
+      box-shadow: 0 18px 40px rgba(11, 31, 51, 0.18);
     }
 
     .photo {
-      width: 170px;
-      height: 170px;
-      border-radius: 50%;
+      width: 190px;
+      height: 190px;
       object-fit: cover;
-      border: 4px solid white;
+      border-radius: 50%;
+      border: 5px solid #c7922b;
       background: white;
     }
 
     h1 {
-      margin: 0;
-      font-size: 38px;
+      font-size: 44px;
+      margin: 0 0 8px;
+      letter-spacing: 0;
     }
 
-    .headline {
-      margin: 10px 0 16px;
-      font-size: 18px;
-      color: #e8f2ff;
+    .subtitle {
+      font-size: 20px;
+      color: #dce8f5;
+      margin: 0 0 18px;
+      max-width: 850px;
     }
 
-    .tagline {
+    .badge {
       display: inline-block;
-      color: #6b4600;
-      background: #fff2d2;
-      border: 1px solid #f1d99b;
+      background: #c7922b;
+      color: #0b1f33;
+      padding: 8px 12px;
       border-radius: 999px;
-      padding: 6px 10px;
       font-weight: bold;
-      font-size: 13px;
-      margin-bottom: 12px;
+      font-size: 14px;
+      margin-bottom: 16px;
     }
 
-    .links, .chips {
+    .contact {
       display: flex;
       flex-wrap: wrap;
-      gap: 9px;
+      gap: 10px;
       margin-top: 12px;
     }
 
-    .links a, .links span, .chip {
+    .contact a,
+    .contact span {
       color: white;
-      border: 1px solid rgba(255,255,255,.28);
-      border-radius: 6px;
-      padding: 8px 10px;
-      font-size: 14px;
       text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.25);
+      padding: 8px 10px;
+      border-radius: 6px;
+      font-size: 14px;
     }
 
-    .chip {
-      background: rgba(255,255,255,.14);
-      border-radius: 999px;
-      font-size: 13px;
+    nav {
+      margin: 18px 0;
+      background: white;
+      border: 1px solid #d8e2ef;
+      border-radius: 8px;
+      padding: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #0b1f33;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 6px;
+    }
+
+    nav a:hover {
+      background: #eef3f8;
+      color: #12395b;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 18px;
+      align-items: start;
     }
 
     section {
       background: white;
-      border: 1px solid #dce5ef;
+      border: 1px solid #d8e2ef;
       border-radius: 8px;
-      padding: 24px;
-      margin-bottom: 16px;
+      padding: 26px;
+      margin-bottom: 18px;
+      box-shadow: 0 8px 24px rgba(15, 35, 55, 0.05);
     }
 
     h2 {
-      margin-top: 0;
-      color: #0f4c81;
-      border-bottom: 2px solid #dce5ef;
+      margin: 0 0 16px;
+      color: #0b1f33;
+      font-size: 23px;
+      border-bottom: 3px solid #c7922b;
       padding-bottom: 8px;
     }
 
     h3 {
-      margin-bottom: 6px;
-      color: #101827;
+      margin: 20px 0 6px;
+      color: #12395b;
+      font-size: 17px;
     }
 
     .meta {
-      color: #5f6f84;
+      color: #64748b;
       font-size: 14px;
-      margin-top: 0;
+      margin: 0 0 10px;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 12px;
-    }
-
-    .box {
-      background: #f9fbfe;
-      border: 1px solid #dce5ef;
-      border-radius: 8px;
-      padding: 14px;
-    }
-
-    .box strong {
-      display: block;
-      margin-bottom: 4px;
-      color: #10243b;
+    ul {
+      margin-top: 8px;
+      padding-left: 20px;
     }
 
     li {
-      margin-bottom: 7px;
+      margin-bottom: 8px;
     }
 
-    .two-col {
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 12px;
+    }
+
+    .skill-card {
+      border: 1px solid #d8e2ef;
+      background: #f8fbff;
+      border-radius: 8px;
+      padding: 15px;
+    }
+
+    .skill-card strong {
+      display: block;
+      color: #0b1f33;
+      margin-bottom: 5px;
+    }
+
+    .project {
+      border-left: 4px solid #c7922b;
+      padding-left: 14px;
+      margin-bottom: 18px;
+    }
+
+    .highlight {
+      background: #f7eddb;
+      border: 1px solid #ead2a5;
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .two-column-list {
       columns: 2;
-      column-gap: 30px;
-    }
-
-    a {
-      color: #0f4c81;
+      column-gap: 28px;
     }
 
     footer {
       text-align: center;
-      color: #5f6f84;
-      padding: 20px;
-      font-size: 14px;
+      color: #64748b;
+      padding: 24px;
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 850px) {
       .hero {
         grid-template-columns: 1fr;
         text-align: center;
+        padding: 30px 20px;
       }
 
       .photo {
@@ -161,14 +209,22 @@
       }
 
       h1 {
-        font-size: 30px;
+        font-size: 34px;
       }
 
-      .links, .chips {
+      .subtitle {
+        font-size: 17px;
+      }
+
+      .contact {
         justify-content: center;
       }
 
-      .two-col {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .two-column-list {
         columns: 1;
       }
     }
@@ -176,181 +232,228 @@
 </head>
 
 <body>
-  <main class="wrap">
+  <div class="container">
     <header class="hero">
       <img class="photo" src="profile.jpg" alt="Md Majharul Islam professional portrait">
 
       <div>
+        <span class="badge">Open to Engineering, Manufacturing, Automation & Industrial Systems Roles</span>
         <h1>Md Majharul Islam</h1>
-        <p class="headline">M.S. Industrial & Systems Engineering | B.S. Mechanical Engineering | Mechanical, Automation & Manufacturing Engineer</p>
-        <span class="tagline">Open to full-time, internship, entry-level, onsite, remote, and hybrid opportunities</span>
+        <p class="subtitle">
+          Mechanical and Industrial Systems Engineer specializing in automation, manufacturing optimization,
+          robotics, CNC, PLC systems, quality engineering, predictive maintenance, and data-driven reliability.
+        </p>
 
-        <div class="links">
-          <span>Beaumont, Texas, United States</span>
+        <div class="contact">
+          <span>Beaumont, Texas</span>
+          <span>Open to Relocation</span>
           <a href="mailto:islammdmajharul116@gmail.com">islammdmajharul116@gmail.com</a>
           <a href="tel:+14096007819">+1 (409) 600-7819</a>
           <a href="https://www.linkedin.com/in/md-majharul-islam6/" target="_blank">LinkedIn</a>
           <a href="https://github.com/islammdmajharul116-hue" target="_blank">GitHub</a>
         </div>
-
-        <div class="chips">
-          <span class="chip">Mechanical Engineering</span>
-          <span class="chip">Industrial Engineering</span>
-          <span class="chip">Automation</span>
-          <span class="chip">Manufacturing</span>
-          <span class="chip">Quality & Reliability</span>
-        </div>
       </div>
     </header>
 
-    <section>
-      <h2>About</h2>
-      <p>
-        I am a Mechanical Engineer and research practitioner transitioning into Industrial and Systems Engineering.
-        My work focuses on automation systems, product reliability, predictive maintenance, industrial quality,
-        manufacturing optimization, robotics, and data-driven operational efficiency. I bring hands-on experience
-        with SolidWorks, ANSYS, Fusion 360, AutoCAD, CNC operations, PLC programming, Python, MATLAB, root cause
-        analysis, and technical documentation across mechanical, automotive, marine, and manufacturing environments.
-      </p>
-    </section>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-    <section>
-      <h2>Technical Skills</h2>
-      <div class="grid">
-        <div class="box"><strong>Design & Simulation</strong>SolidWorks, Fusion 360, ANSYS Workbench, AutoCAD, CAD/CAM, GD&T, FEA, DFM/DFA</div>
-        <div class="box"><strong>Automation & Controls</strong>PLC programming, Omron PLC, Yaskawa V1000, sensors, robotics, ladder logic, Arduino</div>
-        <div class="box"><strong>Manufacturing</strong>CNC milling, CNC lathe, 3D printing, laser cutting, waterjet, lean manufacturing, production optimization</div>
-        <div class="box"><strong>Quality & Reliability</strong>RCA, FMEA, Six Sigma, QA/QC, predictive maintenance, NDT, technical audit, safety compliance</div>
-        <div class="box"><strong>Data & Programming</strong>Python, MATLAB, SQL, Microsoft Excel, data analysis, data governance, AI tools, research analysis</div>
-        <div class="box"><strong>Leadership</strong>Project management, supply chain, inventory management, strategic thinking, entrepreneurship, decision-making</div>
-      </div>
-    </section>
+    <div class="layout">
+      <main>
+        <section id="about">
+          <h2>Professional Summary</h2>
+          <p>
+            I am a Mechanical Engineer and Industrial & Systems Engineering graduate student with practical
+            experience in automation systems, mechanical design, manufacturing operations, product reliability,
+            industrial safety, and quality improvement. My background combines hands-on engineering work with
+            research in predictive maintenance, AI-assisted inspection, non-destructive testing, solar cell
+            modeling, and data-driven industrial optimization.
+          </p>
+          <p>
+            I am seeking full-time, internship, entry-level, onsite, remote, or hybrid opportunities in mechanical
+            engineering, manufacturing engineering, automation engineering, industrial engineering, quality
+            engineering, reliability engineering, maintenance, and process improvement.
+          </p>
+        </section>
 
-    <section>
-      <h2>Experience</h2>
+        <section id="experience">
+          <h2>Professional Experience</h2>
 
-      <h3>Mechanical Engineering Intern | Guangxi Ligong Machinery Co., Ltd.</h3>
-      <p class="meta">Liuzhou, Guangxi, China | May 2022 - Dec 2023</p>
-      <ul>
-        <li>Performed spatial integration, assembly validation, and mechanical component review using SolidWorks and Fusion 360.</li>
-        <li>Conducted quality inspections and ensured compliance with mechanical, manufacturing, and safety standards.</li>
-        <li>Supported troubleshooting and root cause analysis for automotive and manufacturing systems.</li>
-        <li>Designed and tested components that improved manufacturing efficiency and reduced production cost.</li>
-        <li>Maintained technical documentation, compliance records, and engineering change records.</li>
-      </ul>
+          <h3>Mechanical Engineering Intern | Guangxi Ligong Machinery Co., Ltd.</h3>
+          <p class="meta">Liuzhou, Guangxi, China | May 2022 - Dec 2023</p>
+          <ul>
+            <li>Performed spatial integration, assembly validation, and mechanical component review using SolidWorks and Fusion 360.</li>
+            <li>Conducted quality inspections and ensured compliance with mechanical, manufacturing, and safety standards.</li>
+            <li>Supported troubleshooting and root cause analysis for automotive and industrial manufacturing systems.</li>
+            <li>Designed and tested mechanical components that improved manufacturing efficiency and reduced production cost.</li>
+            <li>Maintained technical documentation, regulatory compliance records, and engineering change records.</li>
+          </ul>
 
-      <h3>Assistant Engineer | IFAD Autos PLC</h3>
-      <p class="meta">Dhaka, Bangladesh | Nov 2018 - Dec 2019</p>
-      <ul>
-        <li>Managed full-cycle maintenance and troubleshooting for mechanical and automotive systems while supporting safety compliance.</li>
-        <li>Performed quality inspections and technical design dispositions for vehicle components.</li>
-        <li>Used CAD tools to assist design and testing, reduce assembly downtime, and improve repair planning.</li>
-        <li>Coordinated with vendors for critical mechanical parts, materials, repair support, and documentation.</li>
-      </ul>
+          <h3>Assistant Engineer | IFAD Autos PLC</h3>
+          <p class="meta">Dhaka, Bangladesh | Nov 2018 - Dec 2019</p>
+          <ul>
+            <li>Managed full-cycle maintenance and troubleshooting for mechanical and automotive systems while supporting safety compliance.</li>
+            <li>Performed quality control inspections and technical design disposition reviews for vehicle components.</li>
+            <li>Used CAD tools to support component design, testing, repair planning, and assembly downtime reduction.</li>
+            <li>Coordinated with vendors for critical mechanical parts, repair materials, and maintenance documentation.</li>
+          </ul>
 
-      <h3>Fire Protection Engineer Intern | DEPTC</h3>
-      <p class="meta">Dhaka, Bangladesh | Jan 2019 - Jan 2020</p>
-      <ul>
-        <li>Completed training in fire safety, emergency response, workplace hazard management, and industrial safety systems.</li>
-        <li>Studied industrial risk assessment, safety audits, ergonomics, air quality, and environmental health practices.</li>
-      </ul>
+          <h3>Fire Protection Engineer Intern | DEPTC</h3>
+          <p class="meta">Dhaka, Bangladesh | Jan 2019 - Jan 2020</p>
+          <ul>
+            <li>Completed training in fire safety, emergency response, workplace hazard management, and industrial safety systems.</li>
+            <li>Studied risk assessment, safety audits, ergonomics, air quality, and environmental health practices.</li>
+          </ul>
 
-      <h3>Engine Cadet | Bangladesh Inland and Water Transport Authority</h3>
-      <p class="meta">Dhaka, Bangladesh | Dec 2018 - Dec 2019</p>
-      <ul>
-        <li>Supported marine engine inspection, operation, maintenance, daily logbook recording, safety procedures, and troubleshooting.</li>
-        <li>Worked with ship machinery, workshop practices, welding, and Volvo Penta engine systems.</li>
-      </ul>
-    </section>
+          <h3>Engine Cadet | Bangladesh Inland and Water Transport Authority</h3>
+          <p class="meta">Dhaka, Bangladesh | Dec 2018 - Dec 2019</p>
+          <ul>
+            <li>Supported marine engine inspection, operation, maintenance, daily logbook recording, and troubleshooting.</li>
+            <li>Worked with ship machinery, welding, workshop practices, and Volvo Penta engine systems.</li>
+          </ul>
+        </section>
 
-    <section>
-      <h2>Featured Projects</h2>
-      <h3>Product Defect Analyzer: AI-Driven Quality Control for Modern Logistics</h3>
-      <p>Built an AI-assisted inspection concept using computer vision to detect packaging defects such as tears, punctures, wetness, and missing labels while improving quality reporting and cost-of-quality analysis.</p>
+        <section id="projects">
+          <h2>Featured Engineering Projects</h2>
 
-      <h3>The Smart Combustion Injector</h3>
-      <p>Developed an ECU-integrated injector concept designed to improve fuel efficiency, reduce emissions, and improve injector responsiveness under variable engine conditions.</p>
+          <div class="project">
+            <h3>Product Defect Analyzer: AI-Driven Quality Control for Modern Logistics</h3>
+            <p>
+              Developed an AI-assisted inspection concept using computer vision to identify packaging defects such as
+              tears, punctures, wetness, and missing labels while improving inspection consistency, quality reporting,
+              and cost-of-quality analysis.
+            </p>
+          </div>
 
-      <h3>Two-Cylinder Engine Assembly and CNC Optimization</h3>
-      <p>Modeled and assembled an 11-part two-cylinder engine in Fusion 360 and optimized piston design using CNC machining, DFM/DFA, and manufacturing tolerance analysis.</p>
+          <div class="project">
+            <h3>The Smart Combustion Injector</h3>
+            <p>
+              Designed an ECU-integrated injector concept for heavy-duty diesel engines focused on fuel efficiency,
+              emissions reduction, injector responsiveness, and improved combustion control.
+            </p>
+          </div>
 
-      <h3>Conveyor and Kiln Unloading System for Tiles Manufacturing</h3>
-      <p>Designed a PLC-controlled conveyor and kiln unloading system using ladder logic, Omron PLC, Yaskawa V1000 inverter concepts, HMI monitoring, and safety-focused automation.</p>
-    </section>
+          <div class="project">
+            <h3>Two-Cylinder Engine Assembly and CNC Optimization</h3>
+            <p>
+              Modeled and assembled an 11-part two-cylinder engine in Fusion 360 and optimized piston design using CNC
+              machining, DFM/DFA, manufacturing tolerance analysis, and process planning.
+            </p>
+          </div>
 
-    <section>
-      <h2>Education</h2>
-      <h3>Lamar University</h3>
-      <p class="meta">M.S. Industrial Engineering | Aug 2024 - May 2026 | GPA: 3.8</p>
+          <div class="project">
+            <h3>Conveyor and Kiln Unloading System for Tiles Manufacturing</h3>
+            <p>
+              Designed a PLC-controlled conveyor and kiln unloading concept using ladder logic, Omron PLC, Yaskawa
+              V1000 inverter concepts, HMI monitoring, cooling, sorting, and safety-focused automation.
+            </p>
+          </div>
+        </section>
 
-      <h3>Guangxi University of Science and Technology</h3>
-      <p class="meta">B.S. Mechanical Engineering | Jan 2020 - Jan 2024 | GPA: 3.8</p>
+        <section id="publications">
+          <h2>Publications & Research Interests</h2>
+          <ul>
+            <li>Sphericity Error Evaluation Based on Conical Search Algorithm.</li>
+            <li>Enhancement of Sulfide Based Absorber and Charge Transport Layer Solar Cell Performances Using Machine Learning and SCAPS-1D.</li>
+            <li>Enhancing Microgrid Forecasting Accuracy with a TCNN-TLS Framework.</li>
+            <li>Evaluation of Sr3PBr3/Sr3NCl3 dual-layer perovskite photovoltaic device parameters.</li>
+            <li>AI-powered predictive failure analysis in pressure vessels using real-time sensor fusion.</li>
+            <li>AI-based smart coating degradation detection for offshore structures.</li>
+            <li>Integration of advanced NDT techniques and QA/QC programs in oil and gas operations.</li>
+          </ul>
+        </section>
+      </main>
 
-      <h3>Western Ideal Institute</h3>
-      <p class="meta">Higher National Diploma, Naval Architecture and Marine Engineering | Jan 2014 - Feb 2018 | GPA: 3.4</p>
-    </section>
+      <aside>
+        <section id="skills">
+          <h2>Core Skills</h2>
+          <div class="skills">
+            <div class="skill-card"><strong>Design & Simulation</strong>SolidWorks, Fusion 360, ANSYS Workbench, AutoCAD, CAD/CAM, GD&T, FEA, DFM/DFA</div>
+            <div class="skill-card"><strong>Automation & Controls</strong>PLC programming, Omron PLC, Yaskawa V1000, sensors, robotics, ladder logic, Arduino</div>
+            <div class="skill-card"><strong>Manufacturing</strong>CNC milling, CNC lathe, 3D printing, laser cutting, waterjet, lean manufacturing</div>
+            <div class="skill-card"><strong>Quality & Reliability</strong>RCA, FMEA, Six Sigma, QA/QC, predictive maintenance, NDT, safety compliance</div>
+            <div class="skill-card"><strong>Data & Programming</strong>Python, MATLAB, SQL, Microsoft Excel, data analysis, AI tools</div>
+            <div class="skill-card"><strong>Business & Leadership</strong>Project management, supply chain, inventory management, entrepreneurship</div>
+          </div>
+        </section>
 
-    <section>
-      <h2>Licenses, Certifications & Training</h2>
-      <ul class="two-col">
-        <li>Decision-Making Strategies - NASBA</li>
-        <li>Entrepreneurship Foundations - NASBA</li>
-        <li>Lean Inventory Management - NASBA</li>
-        <li>Data Analysis - NASBA</li>
-        <li>Supply Chain Foundations - PMI, NASBA, LinkedIn</li>
-        <li>Inventory Management Foundations - NASBA, LinkedIn</li>
-        <li>Strategic Thinking - PMI</li>
-        <li>SQL for Data Analysis - LinkedIn</li>
-        <li>Learning Data Governance - LinkedIn</li>
-        <li>Applied AI Projects - LinkedIn</li>
-        <li>Project Management Foundations - PMI, NASBA, LinkedIn</li>
-        <li>Root Cause Analysis - LinkedIn, PMI</li>
-        <li>Reverse Engineering Foundations: Product Design - LinkedIn</li>
-        <li>Learning Industrial Automation - LinkedIn</li>
-        <li>Six Sigma White Belt - CSSC</li>
-        <li>Fire Safety, Health & Environment Management - BIWTA</li>
-        <li>Internal Audit - IFAD Autos PLC</li>
-        <li>Lifting & Rigging Supervisor Training</li>
-        <li>Work at Height Supervisor Training</li>
-        <li>Chemical Process Pump Repair - Flowserve</li>
-        <li>Engineered Overhung Pump Repair - Flowserve</li>
-        <li>Pump Operator Training - Flowserve</li>
-        <li>Pump and Mechanical Seal Basic - Flowserve</li>
-      </ul>
-    </section>
+        <section id="education">
+          <h2>Education</h2>
+          <h3>Lamar University</h3>
+          <p class="meta">M.S. Industrial Engineering | Aug 2024 - May 2026 | GPA: 3.8</p>
 
-    <section>
-      <h2>Publications & Research Interests</h2>
-      <ul>
-        <li>Sphericity Error Evaluation Based on Conical Search Algorithm.</li>
-        <li>Enhancement of Sulfide Based Absorber and Charge Transport Layer Solar Cell Performances Using Machine Learning and SCAPS-1D.</li>
-        <li>Enhancing Microgrid Forecasting Accuracy with a TCNN-TLS Framework.</li>
-        <li>AI-powered predictive failure analysis in pressure vessels using real-time sensor fusion.</li>
-        <li>AI-based smart coating degradation detection for offshore structures.</li>
-        <li>Integration of advanced NDT techniques and QA/QC programs in oil and gas operations.</li>
-      </ul>
-    </section>
+          <h3>Guangxi University of Science and Technology</h3>
+          <p class="meta">B.S. Mechanical Engineering | Jan 2020 - Jan 2024 | GPA: 3.8</p>
 
-    <section>
-      <h2>Awards, Leadership & Activities</h2>
-      <ul>
-        <li>First Place, Lamar Cardinal Idea Pitch Competition 2025 - Smart Combustion Injector.</li>
-        <li>Founder and Advisor, Lamar University Bootcamp.</li>
-        <li>AMSA General Meeting, XA Leadership Meeting, Skate and Score, and Humane Society of Southeast Texas volunteering.</li>
-        <li>Engineering Society and Student Chapter participant at Guangxi University of Science and Technology.</li>
-      </ul>
-    </section>
+          <h3>Western Ideal Institute</h3>
+          <p class="meta">Higher National Diploma, Naval Architecture and Marine Engineering | Jan 2014 - Feb 2018 | GPA: 3.4</p>
+        </section>
 
-    <section>
+        <section id="certifications">
+          <h2>Certifications & Training</h2>
+          <ul>
+            <li>Decision-Making Strategies - NASBA</li>
+            <li>Entrepreneurship Foundations - NASBA</li>
+            <li>Lean Inventory Management - NASBA</li>
+            <li>Data Analysis - NASBA</li>
+            <li>Supply Chain Foundations - PMI, NASBA, LinkedIn</li>
+            <li>Inventory Management Foundations - NASBA, LinkedIn</li>
+            <li>Strategic Thinking - PMI</li>
+            <li>SQL for Data Analysis - LinkedIn</li>
+            <li>Learning Data Governance - LinkedIn</li>
+            <li>Applied AI Projects - LinkedIn</li>
+            <li>Project Management Foundations - PMI, NASBA, LinkedIn</li>
+            <li>Root Cause Analysis - LinkedIn, PMI</li>
+            <li>Reverse Engineering Foundations: Product Design - LinkedIn</li>
+            <li>Learning Industrial Automation - LinkedIn</li>
+            <li>Six Sigma White Belt - CSSC</li>
+            <li>Fire Safety, Health & Environment Management - BIWTA</li>
+            <li>Internal Audit - IFAD Autos PLC</li>
+            <li>Lifting & Rigging Supervisor Training</li>
+            <li>Work at Height Supervisor Training</li>
+            <li>Chemical Process Pump Repair - Flowserve</li>
+            <li>Engineered Overhung Pump Repair - Flowserve</li>
+            <li>Pump Operator Training - Flowserve</li>
+            <li>Pump and Mechanical Seal Basic - Flowserve</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Awards & Leadership</h2>
+          <div class="highlight">
+            <strong>First Place, Lamar Cardinal Idea Pitch Competition 2025</strong>
+            <p>Smart Combustion Injector project focused on diesel engine performance, fuel efficiency, and emissions reduction.</p>
+          </div>
+          <ul>
+            <li>Founder and Advisor, Lamar University Bootcamp.</li>
+            <li>AMSA General Meeting, XA Leadership Meeting, Skate and Score, and Humane Society volunteering.</li>
+            <li>Engineering Society and Student Chapter participant at Guangxi University of Science and Technology.</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+
+    <section id="contact">
       <h2>Contact</h2>
-      <p>I am open to mechanical engineering, manufacturing engineering, automation engineering, industrial engineering, quality engineering, process improvement, maintenance, reliability, and project engineering opportunities.</p>
+      <p>
+        I am open to mechanical engineering, manufacturing engineering, automation engineering, industrial engineering,
+        quality engineering, process improvement, maintenance, reliability, and project engineering opportunities.
+      </p>
       <p><strong>Email:</strong> <a href="mailto:islammdmajharul116@gmail.com">islammdmajharul116@gmail.com</a></p>
       <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/md-majharul-islam6/" target="_blank">linkedin.com/in/md-majharul-islam6</a></p>
     </section>
 
     <footer>
-      <p>© 2026 Md Majharul Islam. Personal portfolio and engineering resume website.</p>
+      <p>© 2026 Md Majharul Islam. Mechanical & Industrial Systems Engineering Portfolio.</p>
     </footer>
-  </main>
+  </div>
 </body>
 </html>
